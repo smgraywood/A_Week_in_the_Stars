@@ -41,7 +41,7 @@ function Imagination() {
 					</div>
 				</>
 			) : (
-				<img src={shootingstar} className="shooting-star"></img>
+				<img src={shootingstar} className="shooting-star" alt="shooting star with text 'make a wish' denoting page is loading"></img>
 			)}
 		</div>
 	);

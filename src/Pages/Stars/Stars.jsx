@@ -48,6 +48,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[0].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[0].title}</p>{" "}
 							<p className="nasa-date">{stars[0].date}</p>
@@ -63,6 +64,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[1].url}
+                                alt="pic from nasa for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[1].title}</p>{" "}
 							<p className="nasa-date">{stars[1].date}</p>
@@ -78,6 +80,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[2].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[2].title}</p>{" "}
 							<p className="nasa-date">{stars[2].date}</p>
@@ -93,6 +96,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[3].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[3].title}</p>{" "}
 							<p className="nasa-date">{stars[3].date}</p>
@@ -108,6 +112,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[4].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[4].title}</p>{" "}
 							<p className="nasa-date">{stars[4].date}</p>
@@ -123,6 +128,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[5].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[5].title}</p>{" "}
 							<p className="nasa-date">{stars[5].date}</p>
@@ -138,6 +144,7 @@ const Stars = () => {
 							<img
 								className="nasa-image"
 								src={stars[6].url}
+                                alt="nasa pic for listed date"
 							></img>{" "}
 							<p className="nasa-title">{stars[6].title}</p>{" "}
 							<p className="nasa-date">{stars[6].date}</p>
