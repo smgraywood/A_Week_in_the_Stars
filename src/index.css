@@ -8,7 +8,10 @@ body {
 	background-image: url("../src/Images/space-background.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
-	overflow: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 code {

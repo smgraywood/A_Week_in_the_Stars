@@ -46,6 +46,10 @@ p{
   font-family: 'Alegreya', serif;
 }
 
+.Home{
+  overflow:hidden;
+}
+
 .home-text-container{
   padding-top: -3vmin;
   margin-top: -1vmin;
