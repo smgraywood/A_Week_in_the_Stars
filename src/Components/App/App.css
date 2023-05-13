@@ -84,6 +84,20 @@ p{
   padding-left: 5vmin;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #010634;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFF;
+}
+
 .nasa-explanation{
   font-size: 2.5vmin;
 }
