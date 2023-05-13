@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap");
 
 .NavBar {
-	background-image: url("../../Images/space-background.jpeg");
 	background-size: cover;
 	width: 100%;
 }
@@ -25,4 +24,7 @@ nav a.active {
 	color: #010634;
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: #fff;
+}
+.NavBar{
+    z-index: 9999;
 }

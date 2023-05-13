@@ -1,0 +1,58 @@
+.OuterContainer {
+	height: 50px;
+}
+.InnerContainer {
+	display: flex;
+	justify-content: flex-end;
+	flex-flow: column;
+	align-items: center;
+	position: relative;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 60px;
+}
+
+.SocMediaList {
+    background-color: #010634;
+    border: #0d420d;
+    border-radius: 75px;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    width: min-content;
+    padding: -2vmin;
+    box-shadow: 0 0 12px 10px #010634;
+    opacity: .8;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+li {
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 0 1.25vmin;
+    width: 10vmin;
+    height: 10vmin;
+    display: inline-block;
+}
+
+li img {
+    width: 100%;
+}
+
+.soc-media-link{
+    filter: invert(100%);
+}
+
+/* media query for under 1770 */

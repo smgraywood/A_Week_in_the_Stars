@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import shootingstar from "../../Images/shooting-star.gif"
 
 const Stars = () => {
 	const start_date = new Date(
@@ -41,7 +42,7 @@ const Stars = () => {
 		<div className="Stars">
 			{loading ? (
 				<>
-                <div></div>
+                <h1 className="stars-title">This Week in the Stars...</h1>
 					<div className="star-container">
 						<div className="img-title-date-container">
 							<img
@@ -149,9 +150,7 @@ const Stars = () => {
 					</div>
 				</>
 			) : (
-				<>
-					<h1>Stars...</h1>
-				</>
+					<img src={shootingstar} alt="a gif of a shooting star with the text 'make a wish'"></img>
 			)}
 		</div>
 	);

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import shootingstar from "../../Images/shooting-star.gif"
 
 function Imagination() {
 	const [quote, setQuote] = useState([]);
@@ -13,7 +14,7 @@ function Imagination() {
 			limit: "1",
 		},
 		headers: {
-			// "X-Api-Key": "IVtQmp37gd3NE3SPDKRrLQ==79hqzLO1QtGnyTs9",
+			"X-Api-Key": "IVtQmp37gd3NE3SPDKRrLQ==79hqzLO1QtGnyTs9",
 		},
 	};
 	const apiCall = async () => {
@@ -40,9 +41,7 @@ function Imagination() {
 					</div>
 				</>
 			) : (
-				<>
-					<h1>Imagination...</h1>
-				</>
+				<img src={shootingstar} className="shooting-star"></img>
 			)}
 		</div>
 	);
