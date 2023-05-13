@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Home from '../../Pages/Home/Home';
+import Stars from '../../Pages/Stars/Stars';
+import Imagination from '../../Pages/Imagination/Imagination';
+import NASAContact from '../../Pages/NASAContact/NASAContact';
+import NavBar from '../NavBar/NavBar';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <main>
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/stars' element={<Stars/>}></Route>
+          <Route path='/imagination' element={<Imagination/>}></Route>
+          <Route path='/nasacontact' element={<NASAContact/>}></Route>
+        </Routes>
+      </main>
     </div>
   );
 }

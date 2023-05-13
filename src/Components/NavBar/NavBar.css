@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@700&display=swap");
+
+.NavBar {
+	background-image: url("../../Images/space-background.jpeg");
+	background-size: cover;
+	width: 100%;
+}
+
+nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 90%;
+}
+
+a {
+	font-family: "Alegreya", serif;
+	font-size: 4vmin;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a.active {
+	color: #010634;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #fff;
+}
