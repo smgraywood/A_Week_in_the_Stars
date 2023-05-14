@@ -44,6 +44,22 @@ const StarsInfo = () => {
 			{loading ? (
 				<>
                 <h1 className="stars-title">This Week in the Stars...</h1>
+                <div className="star-container">
+						<div className="img-title-date-container">
+							<img
+								className="nasa-image"
+								src={stars[7].url}
+                                alt="nasa pic for listed date"
+							></img>{" "}
+							<p className="nasa-title">{stars[7].title}</p>{" "}
+							<p className="nasa-date">{stars[7].date}</p>
+						</div>
+						<div className="nasa-explanation-container">
+							<p className="nasa-explanation">
+								{stars[7].explanation}
+							</p>{" "}
+						</div>
+					</div>                    
 					<div className="star-container">
 						<div className="img-title-date-container">
 							<img
