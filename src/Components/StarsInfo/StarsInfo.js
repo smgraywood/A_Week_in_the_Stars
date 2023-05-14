@@ -48,15 +48,15 @@ const StarsInfo = () => {
 						<div className="img-title-date-container">
 							<img
 								className="nasa-image"
-								src={stars[0].url}
+								src={stars[6].url}
                                 alt="nasa pic for listed date"
 							></img>{" "}
-							<p className="nasa-title">{stars[0].title}</p>{" "}
-							<p className="nasa-date">{stars[0].date}</p>
+							<p className="nasa-title">{stars[6].title}</p>{" "}
+							<p className="nasa-date">{stars[6].date}</p>
 						</div>
 						<div className="nasa-explanation-container">
 							<p className="nasa-explanation">
-								{stars[0].explanation}
+								{stars[6].explanation}
 							</p>{" "}
 						</div>
 					</div>
@@ -64,47 +64,15 @@ const StarsInfo = () => {
 						<div className="img-title-date-container">
 							<img
 								className="nasa-image"
-								src={stars[1].url}
+								src={stars[5].url}
                                 alt="pic from nasa for listed date"
 							></img>{" "}
-							<p className="nasa-title">{stars[1].title}</p>{" "}
-							<p className="nasa-date">{stars[1].date}</p>
+							<p className="nasa-title">{stars[5].title}</p>{" "}
+							<p className="nasa-date">{stars[5].date}</p>
 						</div>
 						<div className="nasa-explanation-container">
 							<p className="nasa-explanation">
-								{stars[1].explanation}
-							</p>{" "}
-						</div>
-					</div>
-					<div className="star-container">
-						<div className="img-title-date-container">
-							<img
-								className="nasa-image"
-								src={stars[2].url}
-                                alt="nasa pic for listed date"
-							></img>{" "}
-							<p className="nasa-title">{stars[2].title}</p>{" "}
-							<p className="nasa-date">{stars[2].date}</p>
-						</div>
-						<div className="nasa-explanation-container">
-							<p className="nasa-explanation">
-								{stars[2].explanation}
-							</p>{" "}
-						</div>
-					</div>
-					<div className="star-container">
-						<div className="img-title-date-container">
-							<img
-								className="nasa-image"
-								src={stars[3].url}
-                                alt="nasa pic for listed date"
-							></img>{" "}
-							<p className="nasa-title">{stars[3].title}</p>{" "}
-							<p className="nasa-date">{stars[3].date}</p>
-						</div>
-						<div className="nasa-explanation-container">
-							<p className="nasa-explanation">
-								{stars[3].explanation}
+								{stars[5].explanation}
 							</p>{" "}
 						</div>
 					</div>
@@ -128,15 +96,15 @@ const StarsInfo = () => {
 						<div className="img-title-date-container">
 							<img
 								className="nasa-image"
-								src={stars[5].url}
+								src={stars[3].url}
                                 alt="nasa pic for listed date"
 							></img>{" "}
-							<p className="nasa-title">{stars[5].title}</p>{" "}
-							<p className="nasa-date">{stars[5].date}</p>
+							<p className="nasa-title">{stars[3].title}</p>{" "}
+							<p className="nasa-date">{stars[3].date}</p>
 						</div>
 						<div className="nasa-explanation-container">
 							<p className="nasa-explanation">
-								{stars[5].explanation}
+								{stars[3].explanation}
 							</p>{" "}
 						</div>
 					</div>
@@ -144,15 +112,47 @@ const StarsInfo = () => {
 						<div className="img-title-date-container">
 							<img
 								className="nasa-image"
-								src={stars[6].url}
+								src={stars[2].url}
                                 alt="nasa pic for listed date"
 							></img>{" "}
-							<p className="nasa-title">{stars[6].title}</p>{" "}
-							<p className="nasa-date">{stars[6].date}</p>
+							<p className="nasa-title">{stars[2].title}</p>{" "}
+							<p className="nasa-date">{stars[2].date}</p>
 						</div>
 						<div className="nasa-explanation-container">
 							<p className="nasa-explanation">
-								{stars[6].explanation}
+								{stars[2].explanation}
+							</p>{" "}
+						</div>
+					</div>
+					<div className="star-container">
+						<div className="img-title-date-container">
+							<img
+								className="nasa-image"
+								src={stars[1].url}
+                                alt="nasa pic for listed date"
+							></img>{" "}
+							<p className="nasa-title">{stars[1].title}</p>{" "}
+							<p className="nasa-date">{stars[1].date}</p>
+						</div>
+						<div className="nasa-explanation-container">
+							<p className="nasa-explanation">
+								{stars[1].explanation}
+							</p>{" "}
+						</div>
+					</div>
+					<div className="star-container">
+						<div className="img-title-date-container">
+							<img
+								className="nasa-image"
+								src={stars[0].url}
+                                alt="nasa pic for listed date"
+							></img>{" "}
+							<p className="nasa-title">{stars[0].title}</p>{" "}
+							<p className="nasa-date">{stars[0].date}</p>
+						</div>
+						<div className="nasa-explanation-container">
+							<p className="nasa-explanation">
+								{stars[0].explanation}
 							</p>{" "}
 						</div>
 					</div>
