@@ -1,4 +1,4 @@
-# Check out A Week In the Stars! <br> [nasa-react.herokuapp.com](https://nasa-react.herokuapp.com/)
+# Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/)
 
 
 <!-- TABLE OF CONTENTS -->
