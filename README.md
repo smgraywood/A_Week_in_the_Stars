@@ -25,7 +25,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="public/images/logo.png">
+<img src="src/Images/README/Logo.png">
 
 This app is a reconceptualization of an app that I built in vanillaJS with dom manipulation almost 2 years ago as a gift for my mom so that she could see an image of the stars each day. When I was a kid we used to sit in front of our house and look up at the stars. It allowed me to imagine a world, and indeed a galaxy, much bigger than my small hometown. 
 
