@@ -1,71 +1,119 @@
-# Getting Started with Create React App
+# Check out A Week In the Stars! <br> [nasa-react.herokuapp.com](https://nasa-react.herokuapp.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#designed-with">Designed With</a></li>
+        <li><a href="#planned-with">Planned With</a></li>
+      </ul>
+    </li>
+    <li><a href="#images">Project Images</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#enhancements">Planned Enhancements</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="public/images/logo.png">
 
-### `npm test`
+This app is a reconceptualization of an app that I built in vanillaJS with dom manipulation almost 2 years ago as a gift for my mom so that she could see an image of the stars each day. When I was a kid we used to sit in front of our house and look up at the stars. It allowed me to imagine a world, and indeed a galaxy, much bigger than my small hometown. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A Week in the Stars allows users to access the past weeks worth of astronomy images from the N.A.S.A. Astronomy Picture of the Day API on the "Stars" page and also allows user to access a randomly generated quote about imagining and imagination from the API Ninjas quote API. In addition, users can access the N.A.S.A Contact page where they can find N.A.S.A's social media pages in order to follow along with all of the amazing media N.A.S.A produces about the stars and our universe.
 
-### `npm run build`
+My hope is that this combination of imagery and quotes will allow users, especially users in areas where stars are less visible, to access their imaginations as to how wide the universe can be. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `npm run eject`
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Designed With
+#### [Figma](https://www.figma.com/file/GpVCoQAZ8vDEKJUqFdAm51/A-Week-in-the-Stars?type=design&node-id=0-1&t=xzJFCWbfeyBMBONj-0)<br> ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) <br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Planned With
+#### [Trello](https://trello.com/b/hbpNT1wF/a-week-in-the-stars) <br> ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Images
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+images of the four pages on desktop:
+<img src="src/Images/README/desktop-Home.png" alt="the desktop site for A Week in the Stars on the Home page.">
+<br>
+<img src="src/Images/README/desktop-Stars.png" alt="the desktop site for A Week in the Stars on the Stars page.">
+<br>
+<img src="src/Images/README/desktop-Imagination.png" alt="the desktop site for A Week in the Stars on the Imagination page.">
+<br>
+<img src="src/Images/README/desktop-NASAContact.png" alt="the desktop site for A Week in the Stars on the N.A.S.A Contact page.">
+<br>
 
-### Code Splitting
+images of the app on mobile:
+<div>
+<img src="src/Images/README/mobile-Home.png" alt="the mobile site for A Week in the Stars on the Home page." style="width: 40%;display: grid;float: right">
+<img src="src/Images/README/mobile-Stars.png" alt="the mobile site for A Week in the Stars on the Stars page." style="width: 40%;display: grid;float: left">
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<div>
+<img src="src/Images/README/mobile-Imagination.png" alt="the mobile site for A Week in the Stars on the Imagination page." style="width: 40%;display: grid;float: right">
+<img src="src/Images/README/mobile-NASAContact.png" alt="the mobile site for A Week in the Stars on the N.A.S.A Contact page." style="width: 40%;display: grid;float: left">
+</div>
 
-### Analyzing the Bundle Size
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Installation
+ 
+1. Clone the repo
+   ```sh
+   git clone git@github.com:smgraywood/NASA_React.git
+   ```
+2. Download the required packages
+   ```sh
+   npm i
+   ```
+3. Get to coding! 😃 
 
-### Making a Progressive Web App
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- CONTRIBUTING -->
+## Contributing
 
-### Advanced Configuration
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-### Deployment
+1. Fork the Project
+2. Go through the Installation Process
+3. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+4. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+5. Push to the Branch (`git push origin feature/AmazingFeature`)
+6. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### `npm run build` fails to minify
+<!-- PLANNED ENHANCEMENTS -->
+## Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# NASA_React
+- [ ] Add more pages using the other NASA APIs to allow users to see more images of our galaxy
+- [ ] Create a custom backend for quotes about imagination
+- [ ] Create a database that allows users to upload their own images of the stars
+- [ ] implement OAuth so that users could keep a database of their own star images
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

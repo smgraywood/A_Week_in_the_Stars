@@ -4,7 +4,7 @@ const NASAContact = () => {
 
     return(
         <div className="NASAContact">
-        <h1 className="contact-title">Follow along with NASA  to fulfill your starriest dreams</h1>
+        <h1 className="contact-title">Follow along with N.A.S.A.  to fulfill your starriest dreams</h1>
         <div>
             <SocialMediaNav/>
         </div>
