@@ -1,8 +1,8 @@
-import QuoteInfo from "../../Components/QuoteInfo/QuoteInfo";
+import Quotes from "../../Components/Quotes/Quotes";
 
 function Imagination() {
 
-	return <QuoteInfo />;
+	return <Quotes />;
 }
 
 export default Imagination;
