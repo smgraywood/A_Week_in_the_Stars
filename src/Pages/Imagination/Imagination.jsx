@@ -1,9 +1,8 @@
 import QuoteInfo from "../../Components/QuoteInfo/QuoteInfo";
 
 function Imagination() {
-return(
-    <QuoteInfo/>
-	);
+
+	return <QuoteInfo />;
 }
 
 export default Imagination;
