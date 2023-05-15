@@ -1,4 +1,5 @@
 # Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9cdc8bb6-2ce2-4954-a513-bfefdc33f580/deploy-status)](https://app.netlify.com/sites/a-week-in-the-stars/deploys)
 
 
 <!-- TABLE OF CONTENTS -->
