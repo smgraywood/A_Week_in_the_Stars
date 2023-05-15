@@ -30,7 +30,7 @@
 
 This app is a reconceptualization of an app that I built in vanillaJS with dom manipulation almost 2 years ago as a gift for my mom so that she could see an image of the stars each day. When I was a kid we used to sit in front of our house and look up at the stars at night. It allowed me to imagine a world, and indeed a galaxy, much bigger than my small hometown. 
 
-A Week in the Stars allows users to access the past weeks worth of astronomy images from the N.A.S.A. Astronomy Picture of the Day API on the "Stars" page and also allows user to access a randomly generated quote about imagining and imagination pulled from an array. In addition, users can access the N.A.S.A Contact page where they can find N.A.S.A's social media pages in order to follow along with all of the amazing media N.A.S.A produces about the stars and our universe.
+A Week in the Stars allows users to access the past weeks worth of astronomy images from the N.A.S.A. Astronomy Picture of the Day API on the "Stars" page and also allows user to access a randomly generated quote pulled from an array of 50+ quotes about imagining and imagination. In addition, users can access the N.A.S.A Contact page where they can find N.A.S.A's social media pages in order to follow along with all of the amazing media N.A.S.A produces about the stars and our universe.
 
 My hope is that this combination of imagery and quotes will allow users, especially users in areas where stars are less visible, to access their imaginations as to how wide the universe can be. 
 
