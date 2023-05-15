@@ -4,11 +4,6 @@ import shootingstar from "../../Images/shooting-star.gif"
 import "./StarsInfo.css"
 
 const StarsInfo = () => {
-	const start_date = new Date(
-		Date.now() - 7 * 24 * 60 * 60 * 1000
-	).toLocaleDateString("en-CA");
-	console.log(start_date);
-
 	const [stars, setStars] = useState([]);
 	const [loading, setLoading] = useState(false);
 
@@ -18,11 +13,8 @@ const StarsInfo = () => {
 		params: {
 			start_date: new Date(
 				Date.now() - 7 * 24 * 60 * 60 * 1000
-			).toLocaleDateString("en-CA"), //how to get one week agos date,,
+			).toLocaleDateString("en-CA"), //how to get one week agos date
 			end_date: new Date().toLocaleDateString("en-CA"),
-		},
-		headers: {
-			// "X-Api-Key": "IVtQmp37gd3NE3SPDKRrLQ==79hqzLO1QtGnyTs9",
 		},
 	};
 	const apiCall = async () => {

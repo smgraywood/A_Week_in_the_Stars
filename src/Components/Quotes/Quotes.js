@@ -210,13 +210,17 @@ function Quotes() {
 			Quote: "Science may set limits to knowledge, but should not set limits to imagination.",
 			Author: "Bertrand Russell",
 		},
+        {
+            Quote: "Few people have the imagination for reality.",
+            Author: "Johann Wolfgang von Goethe"
+        }
 	];
 
 	const randomQuoteNo = Math.floor(Math.random() * 53);
 
 	return (
 		<div className="quote-container">
-			<p className="quote">{quotes[randomQuoteNo].Quote}</p>{" "}
+			<p className="quote">"{quotes[randomQuoteNo].Quote}"</p>{" "}
 			<p className="author">{quotes[randomQuoteNo].Author}</p>
 		</div>
 	);
