@@ -1,4 +1,4 @@
-# Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/) <br><img src="src/Images/shooting-star.gif" style="width: 35vmin" alt="a young girl looking at planets and stars swirling in the air in front of her"> <br>
+# Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/) <br><img src="src/Images/shooting-star.gif" style="width: 35vmin" alt="a star shooting across the sky with text that reads 'make a wish'"> <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9cdc8bb6-2ce2-4954-a513-bfefdc33f580/deploy-status)](https://app.netlify.com/sites/a-week-in-the-stars/deploys)
 
 
