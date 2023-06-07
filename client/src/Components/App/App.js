@@ -4,6 +4,7 @@ import Stars from '../../Pages/Stars/Stars';
 import Imagination from '../../Pages/Imagination/Imagination';
 import NASAContact from '../../Pages/NASAContact/NASAContact';
 import NavBar from '../NavBar/NavBar';
+import Guestbook from '../../Pages/Guestbook/Guestbook';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path='/stars' element={<Stars/>}></Route>
           <Route path='/imagination' element={<Imagination/>}></Route>
           <Route path='/nasacontact' element={<NASAContact/>}></Route>
+          <Route path='/guestbook' element={<Guestbook/>}></Route>
         </Routes>
       </main>
     </div>

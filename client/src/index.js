@@ -1,7 +1,7 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "../src/Components/App/App";
+import App from "./Components/App/App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 

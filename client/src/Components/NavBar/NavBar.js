@@ -36,6 +36,14 @@ function NavBar(props) {
 			>
 				NASA Contact
 			</NavLink>
+			<NavLink
+				to="/guestbook"
+				className={({ isActive, isPending }) =>
+					isPending ? "pending" : isActive ? "active" : ""
+				}
+			>
+				Guest Book
+			</NavLink>
 		</nav>
 	);
 }
