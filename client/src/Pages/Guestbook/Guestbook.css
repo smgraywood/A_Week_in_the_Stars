@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+.form-container{
+    background-color: #FFF;
+    width: 35vmin;
+    padding: 2vmin;
+    border-radius: 5vmin;
+    opacity: .8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4vmin;
+}
+
+.label{
+    font-family: 'Alegreya', serif;
+    color: #010634;
+}
+
+.input{
+    background-image: url("../../Images/space-background.jpeg");
+    color:#FFF
+}
+
+.submit-button{
+    margin-top:1.5vmin;
+    padding: 1vmin;
+    border-radius: 1.5vmin;
+}

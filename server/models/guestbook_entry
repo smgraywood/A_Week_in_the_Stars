@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 //destination schema
 const guestbookSchema = new Schema(
     {
-        name: {
+        guest_name: {
             type: String,
             required: true
         },
@@ -23,4 +23,4 @@ const guestbookSchema = new Schema(
     { timestamps: true }
 )
 
-module.exports = mongoose.model("Guestbook", GuestbookSchema)
+module.exports = mongoose.model("Guestbook", guestbookSchema)

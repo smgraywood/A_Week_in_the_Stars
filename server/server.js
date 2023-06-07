@@ -5,10 +5,8 @@ require("dotenv").config();
 require("./config/database");
 
 //require index router module
-// const indexRoutes = require("./routes/index");
-// const flightRoutes = require("./routes/flights");
-// const detailsRoutes = require("./routes/details");
-// const ticketsRoutes = require("./routes/tickets");
+const guestbookRoutes = require("../server/routes/guestbook");
+
 
 // initialize express application
 const app = express();
@@ -29,11 +27,8 @@ app.use(express.static("public")); // express static middleware - makes static a
 app.use(express.urlencoded({ extended: false })); //creates req.body from html form submission
 
 // mount routes
-// app.use("/", indexRoutes);
-// app.use("/", detailsRoutes);
-// app.use("/", ticketsRoutes);
-// app.use("/flights", flightRoutes);
-// 👆 mount index router module to the root route
+app.use("/Guestbook", guestbookRoutes);
+
 
 // tell the application to listen for requests
 app.listen(3000, () => {
