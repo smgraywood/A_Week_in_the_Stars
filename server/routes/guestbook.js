@@ -3,8 +3,8 @@ const router = express.Router();
 
 const guestbookController = require("../controllers/guestbook_entry");
 
-router.get('/Guestbook', guestbookController.new);
+router.get('/Guestbook', guestbookController.newGuestbookEntry);
 
-router.post('/Guestbook', guestbookController.create);
+// router.post('/Guestbook', guestbookController.create);
 
 module.exports = router;

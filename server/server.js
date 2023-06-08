@@ -5,15 +5,15 @@ require("dotenv").config();
 require("./config/database");
 
 //require index router module
-const guestbookRoutes = require("../server/routes/guestbook");
+const guestbookRoutes = require("./routes/guestbook");
 
 
 // initialize express application
 const app = express();
 
 // configure application settings
-app.set("view engine", "ejs");
-// 👆 this sets the default view engine to be "ejs"
+
+
 
 require("dotenv").config();
 //require an execute database config code

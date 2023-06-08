@@ -1,9 +1,7 @@
 const Guestbook = require("../models/guestbook_entry.js")
 
 function newGuestbookEntry(req, res) {
-	res.render("entrys/new", {
-		title: "Leave a New Message",
-	});
+	res.render("Leave a New Message");
 }
 
 async function create(req, res) {
