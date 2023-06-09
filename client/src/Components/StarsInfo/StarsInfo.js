@@ -9,7 +9,7 @@ const StarsInfo = () => {
 
 	const options = {
 		method: "GET",
-		url: "https://api.nasa.gov/planetary/apod?api_key=XYYh7uKlPTuv6YJnuydI7oRi3ipXZfDht3VDDoGH",
+		url: "https://api.nasa.gov/planetary/apod?api_key=Mb6FbMl5smhTEeciTTtci4ZJmnGJhZeU1qZKv6xK",
 		params: {
 			start_date: new Date(
 				Date.now() - 7 * 24 * 60 * 60 * 1000

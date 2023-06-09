@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../Guestbook/Guestbook.css";
 import axios from "axios";
+import "dotenv/config"
 
 const Guestbook = () => {
 	const [name, setName] = useState("");
@@ -22,7 +23,7 @@ const Guestbook = () => {
 
 	const sendData = (formData) => {
 		axios
-			.post("http://localhost:8010/proxy/guestbook/", formData, {
+			.post(`${process.env.SERVER}/guestbook/`, formData, {
 				headers: {
 					"Content-Type": "application/json",
 				},

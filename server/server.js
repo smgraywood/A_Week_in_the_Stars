@@ -42,6 +42,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/guestbook", guestbookRoutes);
 
 // tell the application to listen for requests
-app.listen(3001, () => {
-	console.log("express is listening on port:3001");
-});
+// app.listen(3001, () => {
+// 	console.log("express is listening on port:3001");
+// });
+
+app.listen(process.env.PORT || 3001);
