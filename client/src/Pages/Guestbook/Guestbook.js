@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Guestbook/Guestbook.css";
 import axios from "axios";
-import "dotenv/config"
 
 const Guestbook = () => {
 	const [name, setName] = useState("");
