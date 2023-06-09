@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const guestbookController = require("../controllers/guestbook_entry");
+const guestbookController = require("../controllers/guestbook");
 
-router.get('/Guestbook', guestbookController.newGuestbookEntry);
+router.post('/', guestbookController.create);
 
 // router.post('/Guestbook', guestbookController.create);
 

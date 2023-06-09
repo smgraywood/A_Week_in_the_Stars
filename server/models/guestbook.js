@@ -6,14 +6,14 @@ const Schema = mongoose.Schema;
 //destination schema
 const guestbookSchema = new Schema(
     {
-        guest_name: {
+        name: {
             type: String,
             required: true
         },
         email: {
             type: String,
             required: true,
-            match: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/
+            // match: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/
         },
         message: {
             type: String,
@@ -23,4 +23,4 @@ const guestbookSchema = new Schema(
     { timestamps: true }
 )
 
-module.exports = mongoose.model("Guestbook", guestbookSchema)
+module.exports = mongoose.model("guestbook", guestbookSchema)
