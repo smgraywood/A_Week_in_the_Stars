@@ -22,7 +22,7 @@ const Guestbook = () => {
 
 	const sendData = (formData) => {
 		axios
-			.post(`${process.env.API_ROOT}/guestbook/`, formData, {
+			.post("https://a-week-in-the-stars.herokuapp.com/guestbook/", formData, {
 				headers: {
 					"Content-Type": "application/json",
 				},
