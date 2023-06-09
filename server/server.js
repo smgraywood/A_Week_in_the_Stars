@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 // require("dotenv").config({path: __dirname + '/.env'});
+const cors = require("cors");
 require("./config/database");
 
 //require index router module
@@ -24,6 +25,7 @@ app.use(express.static("public")); // express static middleware - makes static a
 app.use(express.urlencoded({ extended: false })); //creates req.body from html form submission
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors())
 
 // POST endpoint for saving form data to MongoDB
 // app.post("/guestbook", (req, res) => {
