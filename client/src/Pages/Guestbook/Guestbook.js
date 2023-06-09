@@ -7,31 +7,7 @@ const Guestbook = () => {
 	const [message, setMessage] = useState("");
 	const [entries, setEntries] = useState([]);
 
-	useEffect(() => {
-		// Fetch the guestbook entries from the server
-		fetchEntries();
-	}, []);
 
-	const fetchEntries = () => {
-		// Make an AJAX GET request to the server
-		const xhr = new XMLHttpRequest();
-		xhr.open("GET", "/guestbook");
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === XMLHttpRequest.DONE) {
-				if (xhr.status >= 200 && xhr.status < 300) {
-					console.log("Request successful");
-					console.log(xhr.responseText);
-					const responseData = JSON.parse(xhr.responseText);
-					setEntries(responseData);
-				} else {
-					console.log("Request failed");
-					console.log(xhr.status);
-				}
-			}
-		};
-		xhr.send();
-	};
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -63,6 +39,32 @@ const Guestbook = () => {
 		};
 		xhr.send(JSON.stringify(formData));
 		console.log(formData);
+	};	
+    
+    useEffect(() => {
+		// Fetch the guestbook entries from the server
+		fetchEntries();
+	}, [entries]);
+
+	const fetchEntries = () => {
+		// Make an AJAX GET request to the server
+		const xhr = new XMLHttpRequest();
+		xhr.open("GET", "/guestbook");
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === XMLHttpRequest.DONE) {
+				if (xhr.status >= 200 && xhr.status < 300) {
+					console.log("Request successful");
+					console.log(xhr.responseText);
+					const responseData = JSON.parse(xhr.responseText);
+					setEntries(responseData);
+				} else {
+					console.log("Request failed");
+					console.log(xhr.status);
+				}
+			}
+		};
+		xhr.send();
 	};
 
 	return (
@@ -117,8 +119,6 @@ const Guestbook = () => {
 				{entries.map((entry, index) => (
 					<div className="message-container" key={index}>
 						<strong>Name:</strong> {entry.name}
-						<br />
-						<strong>Email:</strong> {entry.email}
 						<br />
 						<strong>Message:</strong> {entry.message}
 						<br />

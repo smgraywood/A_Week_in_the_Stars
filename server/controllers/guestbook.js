@@ -22,15 +22,18 @@ async function create(req, res) {
 
 async function get(req, res) {
 	try {
-	  const entries = await Guestbook.find();
-	  res.status(200).json(entries);
+		const entries = await Guestbook.find();
+		res.status(200).json(entries);
 	} catch (error) {
-	  res.status(500).json({
-		success: false,
-		message: 'An error occurred while fetching guestbook entries',
-		error: error.message,
-	  });
+		res.status(500).json({
+			success: false,
+			message: "An error occurred while fetching guestbook entries",
+			error: error.message,
+		});
 	}
-  }
+}
 
-module.exports = { create, get };
+module.exports = { 
+	create, 
+	get, 
+};
