@@ -22,7 +22,7 @@ const Guestbook = () => {
 
 	const sendData = (formData) => {
 		axios
-			.post(`${process.env.SERVER}/guestbook/`, formData, {
+			.post(`${process.env.API_ROOT}/guestbook/`, formData, {
 				headers: {
 					"Content-Type": "application/json",
 				},
