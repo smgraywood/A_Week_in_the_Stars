@@ -46,7 +46,7 @@ const Guestbook = () => {
 
 	const fetchEntries = () => {
 		axios
-			.get("/guestbook", {
+			.get("https://a-week-in-the-stars.herokuapp.com/guestbook/", {
 				headers: {
 					"Content-Type": "application/json",
 				},
