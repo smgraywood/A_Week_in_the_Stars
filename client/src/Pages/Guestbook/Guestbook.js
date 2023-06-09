@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../Guestbook/Guestbook.css";
+import axios from "axios";
 
 const Guestbook = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [entries, setEntries] = useState([]);
-
-
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -22,50 +21,46 @@ const Guestbook = () => {
 	};
 
 	const sendData = (formData) => {
-		// Make an HTTP POST request to the server
-		const xhr = new XMLHttpRequest();
-		xhr.open("POST", "http://localhost:8010/proxy/guestbook/");
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === XMLHttpRequest.DONE) {
-				if (xhr.status >= 200 && xhr.status < 300) {
-					console.log("Request successful");
-					console.log(xhr.responseText);
-				} else {
-					console.log("Request failed");
-					console.log(xhr.status);
-				}
-			}
-		};
-		xhr.send(JSON.stringify(formData));
+		axios
+			.post("http://localhost:8010/proxy/guestbook/", formData, {
+				headers: {
+					"Content-Type": "application/json",
+				},
+			})
+			.then((response) => {
+				console.log("Request successful");
+				console.log(response.data);
+				fetchEntries();
+			})
+			.catch((error) => {
+				console.log("Request failed");
+				console.log(error);
+			});
+
 		console.log(formData);
-		fetchEntries();
-	};	
-    
-    useEffect(() => {
-		// Fetch the guestbook entries from the server
+	};
+
+	useEffect(() => {
 		fetchEntries();
 	}, []);
 
 	const fetchEntries = () => {
-		// Make an AJAX GET request to the server
-		const xhr = new XMLHttpRequest();
-		xhr.open("GET", "/guestbook");
-		xhr.setRequestHeader("Content-Type", "application/json");
-		xhr.onreadystatechange = function () {
-			if (xhr.readyState === XMLHttpRequest.DONE) {
-				if (xhr.status >= 200 && xhr.status < 300) {
-					console.log("Request successful");
-					console.log(xhr.responseText);
-					const responseData = JSON.parse(xhr.responseText);
-					setEntries(responseData);
-				} else {
-					console.log("Request failed");
-					console.log(xhr.status);
-				}
-			}
-		};
-		xhr.send();
+		axios
+			.get("/guestbook", {
+				headers: {
+					"Content-Type": "application/json",
+				},
+			})
+			.then((response) => {
+				console.log("Request successful");
+				console.log(response.data);
+				const responseData = response.data;
+				setEntries(responseData);
+			})
+			.catch((error) => {
+				console.log("Request failed");
+				console.log(error);
+			});
 	};
 
 	return (
