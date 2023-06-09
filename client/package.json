@@ -38,5 +38,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://a-week-in-the-stars.herokuapp.com/"
+  "proxy": "http://localhost:3001"
 }

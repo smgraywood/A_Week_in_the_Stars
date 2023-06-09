@@ -13,7 +13,6 @@ const app = express();
 
 // configure application settings
 
-require("dotenv").config();
 //require an execute database config code
 require("./config/database");
 
