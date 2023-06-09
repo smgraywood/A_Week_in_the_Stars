@@ -39,12 +39,13 @@ const Guestbook = () => {
 		};
 		xhr.send(JSON.stringify(formData));
 		console.log(formData);
+		fetchEntries();
 	};	
     
     useEffect(() => {
 		// Fetch the guestbook entries from the server
 		fetchEntries();
-	}, [entries]);
+	}, []);
 
 	const fetchEntries = () => {
 		// Make an AJAX GET request to the server
