@@ -2,7 +2,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
-require("dotenv").config({path: __dirname + '/.env'});
+// require("dotenv").config({path: __dirname + '/.env'});
 require("./config/database");
 
 //require index router module
