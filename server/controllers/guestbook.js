@@ -1,4 +1,4 @@
-const Guestbook = require("../models/guestbook.js")
+const Guestbook = require("../models/guestbook.js");
 
 async function newGuestbook(req, res) {
 	res.render("/guestbook", {
@@ -8,7 +8,7 @@ async function newGuestbook(req, res) {
 
 async function create(req, res) {
 	try {
-		console.log(req.body)
+		console.log(req.body);
 		await Guestbook.create(req.body).then(function (newGuestbook) {
 			res.redirect("/guestbook");
 		});
@@ -20,4 +20,17 @@ async function create(req, res) {
 	}
 }
 
-module.exports = {create}
+async function get(req, res) {
+	try {
+	  const entries = await Guestbook.find();
+	  res.status(200).json(entries);
+	} catch (error) {
+	  res.status(500).json({
+		success: false,
+		message: 'An error occurred while fetching guestbook entries',
+		error: error.message,
+	  });
+	}
+  }
+
+module.exports = { create, get };
