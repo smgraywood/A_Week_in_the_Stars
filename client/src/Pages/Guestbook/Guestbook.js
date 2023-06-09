@@ -112,20 +112,19 @@ const Guestbook = () => {
 			</div>
 			<div className="entries-container">
 				<h2>Guestbook Entries</h2>
-                </div>
-				<ul>
-					{entries.map((entry, index) => (
-						<div className="message-container" key={index}>
-							<strong>Name:</strong> {entry.name}
-							<br />
-							<strong>Email:</strong> {entry.email}
-							<br />
-							<strong>Message:</strong> {entry.message}
-							<br />
-						</div>
-					))}
-				</ul>
-			
+			</div>
+			<ul className="list">
+				{entries.map((entry, index) => (
+					<div className="message-container" key={index}>
+						<strong>Name:</strong> {entry.name}
+						<br />
+						<strong>Email:</strong> {entry.email}
+						<br />
+						<strong>Message:</strong> {entry.message}
+						<br />
+					</div>
+				))}
+			</ul>
 		</>
 	);
 };
