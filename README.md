@@ -1,4 +1,4 @@
-# Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/) <br><img src="src/Images/shooting-star.gif" style="width: 35vmin" alt="a star shooting across the sky with text that reads 'make a wish'"> <br>
+# Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/) <br><img src="client/src/Images/shooting-star.gif" style="width: 35vmin" alt="a star shooting across the sky with text that reads 'make a wish'"> <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9cdc8bb6-2ce2-4954-a513-bfefdc33f580/deploy-status)](https://app.netlify.com/sites/a-week-in-the-stars/deploys)
 
 
@@ -59,24 +59,24 @@ My hope is that this combination of imagery and quotes will allow users, especia
 ## Images
 
 images of the four pages on desktop:
-<img src="src/Images/README/desktop-Home.png" alt="the desktop site for A Week in the Stars on the Home page.">
+<img src="client/src/Images/README/desktop-Home.png" alt="the desktop site for A Week in the Stars on the Home page.">
 <br>
-<img src="src/Images/README/desktop-Stars.png" alt="the desktop site for A Week in the Stars on the Stars page.">
+<img src="client/src/Images/README/desktop-Stars.png" alt="the desktop site for A Week in the Stars on the Stars page.">
 <br>
-<img src="src/Images/README/desktop-Imagination.png" alt="the desktop site for A Week in the Stars on the Imagination page.">
+<img src="client/src/Images/README/desktop-Imagination.png" alt="the desktop site for A Week in the Stars on the Imagination page.">
 <br>
-<img src="src/Images/README/desktop-NASAContact.png" alt="the desktop site for A Week in the Stars on the N.A.S.A Contact page.">
+<img src="client/src/Images/README/desktop-NASAContact.png" alt="the desktop site for A Week in the Stars on the N.A.S.A Contact page.">
 <br>
 
 images of the app on mobile:
 <div>
-<img src="src/Images/README/mobile-Home.png" alt="the mobile site for A Week in the Stars on the Home page." style="width: 40%;display: grid;float: right">
-<img src="src/Images/README/mobile-Stars.png" alt="the mobile site for A Week in the Stars on the Stars page." style="width: 40%;display: grid;float: left">
+<img src="client/src/Images/README/mobile-Home.png" alt="the mobile site for A Week in the Stars on the Home page." style="width: 40%;display: grid;float: right">
+<img src="client/src/Images/README/mobile-Stars.png" alt="the mobile site for A Week in the Stars on the Stars page." style="width: 40%;display: grid;float: left">
 </div>
 
 <div>
-<img src="src/Images/README/mobile-Imagination.png" alt="the mobile site for A Week in the Stars on the Imagination page." style="width: 40%;display: grid;float: right">
-<img src="src/Images/README/mobile-NASAContact.png" alt="the mobile site for A Week in the Stars on the N.A.S.A Contact page." style="width: 40%;display: grid;float: left">
+<img src="client/src/Images/README/mobile-Imagination.png" alt="the mobile site for A Week in the Stars on the Imagination page." style="width: 40%;display: grid;float: right">
+<img src="client/src/Images/README/mobile-NASAContact.png" alt="the mobile site for A Week in the Stars on the N.A.S.A Contact page." style="width: 40%;display: grid;float: left">
 </div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
