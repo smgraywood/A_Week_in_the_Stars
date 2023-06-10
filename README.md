@@ -87,7 +87,7 @@ images of the app on mobile:
    ```sh
    git clone git@github.com:smgraywood/NASA_React.git
    ```
-2. Download the required packages
+2. Download the required packages in both the client and server folders
    ```sh
    npm i
    ```
