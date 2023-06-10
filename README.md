@@ -1,5 +1,5 @@
 # Check out A Week In the Stars! <br> [a-week-in-the-stars.netlify.app](https://a-week-in-the-stars.netlify.app/) <br><img src="client/src/Images/shooting-star.gif" style="width: 35vmin" alt="a star shooting across the sky with text that reads 'make a wish'"> <br>
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9cdc8bb6-2ce2-4954-a513-bfefdc33f580/deploy-status)](https://app.netlify.com/sites/a-week-in-the-stars/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/05cd4612-a49c-4222-8855-c3acb7ff1eaa/deploy-status)](https://app.netlify.com/sites/a-week-in-the-stars/deploys)
 
 
 <!-- TABLE OF CONTENTS -->
@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="src/Images/README/Logo.png">
+<img src="client/src/Images/README/Logo.png">
 
 This app is a reconceptualization of an app that I built in vanillaJS with dom manipulation almost 2 years ago as a gift for my mom so that she could see an image of the stars each day. When I was a kid we used to sit in front of our house and look up at the stars at night. It allowed me to imagine a world, and indeed a galaxy, much bigger than my small hometown. 
 
