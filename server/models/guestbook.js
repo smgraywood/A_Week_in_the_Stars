@@ -13,7 +13,10 @@ const guestbookSchema = new Schema(
         email: {
             type: String,
             required: true,
-            // match: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/
+            match: [
+                /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+                'Please enter a valid email address'
+            ]
         },
         message: {
             type: String,
