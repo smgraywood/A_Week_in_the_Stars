@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+
+.imagine-button{
+    background-color: #FFF;
+    font-family: 'Alegreya', serif;
+    margin-top:1.5vmin;
+    padding: 1vmin;
+    border-radius: 1.5vmin;
+}
+

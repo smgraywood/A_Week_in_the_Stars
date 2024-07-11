@@ -1,63 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alegreya&display=swap");
 
-.form-container{
-    background-color: #FFF;
-    width: 35vmin;
-    padding: 2vmin;
-    border-radius: 5vmin;
-    opacity: .8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 4vmin;
+.form-container {
+	background-color: #fff;
+	width: 45vmin;
+	padding: 2vmin;
+	border-radius: 5vmin;
+	opacity: 0.8;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 4vmin;
+	text-align: left;
 }
 
-.label{
-    font-family: 'Alegreya', serif;
-    color: #010634;
+.label {
+	font-family: "Alegreya", serif;
+	color: #010634;
+	text-align: left;
 }
 
-.input{
-    background-image: url("../../Images/space-background.jpeg");
-    color:#FFF
+.input {
+	background-image: url("../../Images/space-background.jpeg");
+	color: #fff;
+	margin-left: 2vmin;
 }
 
-.submit-button{
-    margin-top:1.5vmin;
-    padding: 1vmin;
-    border-radius: 1.5vmin;
+.date-label {
+	margin-left: 2vmin;
 }
 
-.entries-container{
-    background-color: #FFF;
-    width: 35vmin;
-    padding: 2vmin;
-    border-radius: 5vmin;
-    opacity: .8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 4vmin;
+.button-container {
+	display: flex;
+	justify-content: center; /* Center the button horizontally */
 }
 
-.list{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -2vmin;
+.submit-button {
+	margin-top: 1.5vmin;
+	padding: 1vmin;
+	border-radius: 1.5vmin;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto;
 }
 
-.message-container{
-    background-color: #FFF;
-    width: 35vmin;
-    padding: 2vmin;
-    border-radius: 5vmin;
-    opacity: .8;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 4vmin;
+.entries-container {
+	background-color: #fff;
+	width: 35vmin;
+	padding: 2vmin;
+	border-radius: 5vmin;
+	opacity: 0.8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 4vmin;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -2vmin;
+}
+
+.message-container {
+	background-color: #fff;
+	width: 35vmin;
+	padding: 2vmin;
+	border-radius: 5vmin;
+	opacity: 0.8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 4vmin;
 }

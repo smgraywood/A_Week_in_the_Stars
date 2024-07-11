@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Guestbook = () => {
 	const [name, setName] = useState("");
+	const [date, setDate] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
 	const [entries, setEntries] = useState([]);
@@ -16,13 +17,15 @@ const Guestbook = () => {
 		sendData(formData);
 		// Reset the form
 		setName("");
+		setDate("");
 		setEmail("");
 		setMessage("");
 	};
 
 	const sendData = (formData) => {
+		// launched: https://a-week-in-the-stars.herokuapp.com/guestbook/
 		axios
-			.post("https://a-week-in-the-stars.herokuapp.com/guestbook/", formData, {
+			.post("http://localhost:3000/guestbook/", formData, {
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -45,8 +48,9 @@ const Guestbook = () => {
 	}, []);
 
 	const fetchEntries = () => {
+		// launched: https://a-week-in-the-stars.herokuapp.com/guestbook/
 		axios
-			.get("https://a-week-in-the-stars.herokuapp.com/guestbook/", {
+			.get("http://localhost:3000/guestbook/", {
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -103,9 +107,11 @@ const Guestbook = () => {
 							className="input"
 						></textarea>
 					</div>
-					<button type="submit" className="submit-button">
-						Submit
-					</button>
+					<div className="button-container">
+						<button type="submit" className="submit-button">
+							Submit
+						</button>
+					</div>
 				</form>
 			</div>
 			<div className="entries-container">
@@ -115,6 +121,9 @@ const Guestbook = () => {
 				{entries.map((entry, index) => (
 					<div className="message-container" key={index}>
 						<strong>Name:</strong> {entry.name}
+						<br />
+						<strong>Date:</strong>{" "}
+						{entry.createdAt.substring(0, 10)}
 						<br />
 						<strong>Message:</strong> {entry.message}
 						<br />
