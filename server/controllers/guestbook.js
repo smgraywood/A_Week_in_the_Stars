@@ -22,7 +22,8 @@ async function create(req, res) {
 
 async function get(req, res) {
 	try {
-		const entries = await Guestbook.find();
+		const entries = await Guestbook.find().sort({ createdAt: -1 });
+
 		res.status(200).json(entries);
 	} catch (error) {
 		res.status(500).json({

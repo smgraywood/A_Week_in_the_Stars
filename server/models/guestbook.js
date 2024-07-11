@@ -10,13 +10,14 @@ const guestbookSchema = new Schema(
             type: String,
             required: true
         },
-        date: {
-            type:Date(),
-        },
         email: {
             type: String,
             required: true,
             // match: /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/
+        },
+        createdAt: {
+            type: Date,
+            default: Date.now
         },
         message: {
             type: String,
