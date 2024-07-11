@@ -17,7 +17,6 @@ const Guestbook = () => {
 		sendData(formData);
 		// Reset the form
 		setName("");
-		setDate("");
 		setEmail("");
 		setMessage("");
 	};
